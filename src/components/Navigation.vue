@@ -3,11 +3,11 @@
     <!-- Main Toolbar -->
     <v-toolbar fixed>
       <v-toolbar-side-icon class="hidden-md-and-up" @click="drawer = !drawer"></v-toolbar-side-icon>
-      <v-toolbar-title class="text-uppercase display-1"><v-btn flat transparent class="display-1" :to="$i18nRoute({ name: nav.home.title })" @click="sendData(nav.home)">NameOfSite</v-btn></v-toolbar-title>
+      <v-toolbar-title class="text-uppercase"><v-btn flat class="display-1" :to="$i18nRoute({ name: nav.home.title })" @click="sendData(nav.home)">NameOfSite</v-btn></v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
-        <template v-for="page in nav">
-          <v-btn flat :key="page.id" class="title" :to="$i18nRoute({ name: page.title })" @click="sendData(page)">{{ $t(page.page) }}</v-btn>
+        <template v-for="item in nav">
+          <v-btn flat :key="item.id" class="title" :to="$i18nRoute({ name: item.title })" @click="sendData(item)">{{ $t(item.name) }}</v-btn>
         </template>
         <v-divider vertical></v-divider>
         <TheLanguageSwitcher style="margin: 10px;"/>
@@ -33,14 +33,14 @@
           <v-divider></v-divider>
 
           <v-list-tile
-            v-for="page in nav"
-            :key="page.title"
-            @click="sendData(page)"
+            v-for="item in nav"
+            :key="item.id"
+            @click="sendData(item)"
             class="text-uppercase title"
-            :to="$i18nRoute({ name: page.title })"
+            :to="$i18nRoute({ name: item.title })"
           >
             <v-list-tile-content>
-              <v-list-tile-title class="white--text">{{ $t(page.page) }}</v-list-tile-title>
+              <v-list-tile-title class="white--text">{{ $t(item.name) }}</v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
           <v-divider></v-divider>
@@ -63,16 +63,17 @@ export default {
     return {
       nav: {
         home: {
-          id: 1,
-          title: 'Home',
-          show: false,
-          page: 'pages.home'
+          id: 0,
+          active: false,
+          //'title' , 'name' needs the link to i18n's json obj
+          title: 'home',
+          name: 'pages.home'
         },
         about: {
-          id: 2,
-          title: 'About',
-          show: false,
-          page: 'pages.about'
+          id: 1,
+          title: 'about',
+          active: false,
+          name: 'pages.about'
         }
       },
       drawer: false
@@ -82,20 +83,17 @@ export default {
     loadUrl () {
       const link = window.location.href
       if (link.includes("home")) {
-        this.nav.home.show = true
+        this.nav.home.active = true
       } else if (link.includes("shit")) {
-        // this.nav.home.show = true
+        // this.nav.home.active = true
         return
       }
     },
-    sendData: function (data) {
-      this.nav.home.show = false
-      this.nav.about.show = false
-      this.nav.community.show = false
-      this.nav.buy.show = false
-      this.nav.blog.show = false
+    sendData: function (item) {
+      this.nav.home.active = false
+      this.nav.about.active = false
 
-      data.show = true
+      item.active = true
 
       // await this.sleep(50)
       this.drawer = false
@@ -108,5 +106,9 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.overflow-vis {
+  overflow: visible;
+  height: stretch;
+}
 </style>
