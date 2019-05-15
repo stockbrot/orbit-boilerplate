@@ -1,0 +1,53 @@
+{
+  "footer": "Get connected with us on social networks!",
+  "pages": {
+    "home": "Home",
+    "community": "Community",
+    "buy": "Buy",
+    "blog": "Blog",
+    "about": "About"
+  },
+  "blogs": {
+    "more": "Read More",
+    "blog1": {
+      "cardTitle": "This is the Card title #2",
+      "subheading": "This is a subheading to make people want to read more #1",
+      "dialogTitle": "This is the Dialog Title #1",
+      "dialogText1": "This is the dialogs text #1"
+    },
+    "blog2": {
+      "cardTitle": "New beginnings, new Website",
+      "subheading": "After some minor setbacks and bumps in the road, a new beginning is upon us.",
+      "dialogTitle": "New Team & New Engine",
+      "dialogText1": "<h2>New Team</h2><span>We now have a new team with a new set of skills!</span>",
+      "dialogText2": "<h2>New Engine</h2><span>We've decided to switch from using Unreal Engine 4, to now using Godot 3.1. It may not be looking as flashy or as awesome as Unreal Engine 4, but therefore it's much less ressource demanding than Unreal.</span>"
+    }
+  },
+  "home": {
+    "headline": "Out soon!",
+    "subheading": "Available on all major platforms!",
+    "main3": {
+      "headline": "Three ways to play",
+      "subheading": "You should play now!",
+      "first": {
+        "title": "Singleplayer Story",
+        "text": "Play as Carl the Package deliverer in a crazy and colorfull world."
+      },
+      "second": {
+        "title": "Singleplayer Arcade",
+        "text": "In this mode, your only objective is to acquire as many points as possible! Climb the leaderboards and get daily rewards based on your rank."
+      },
+      "third": {
+        "title": "Multiplayer",
+        "text": "Play with or against your Friends, either to gain points or just for fun!."
+      }
+    },
+    "cta_headline": "Join our Community",
+    "cta_subheading": "or start a discussion in our Forums",
+    "cta_button": "To Community hub",
+    "comp_headline": "Company Info",
+    "comp_text": "Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti.",
+    "comp_cont_headline": "Contact Us",
+    "comp_cont_text": "Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare."
+  }
+}
