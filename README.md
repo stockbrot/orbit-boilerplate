@@ -1,32 +1,40 @@
 # Orbit's Boilerplate for Vue.js (using vuetify, vue-router, vue-i18n)
-<img src="https://img.shields.io/badge/npm_install-passing-success.svg?style=popout-square&logo=npm&color=black"><img src="https://img.shields.io/badge/npm_run_build-passing-success.svg?style=popout-square&logo=vue.js&color=black">
+<img src="https://img.shields.io/badge/yarn_build-passing-success.svg?style=popout-square&logo=vue.js&color=black">  <img src="https://img.shields.io/librariesio/github/stockbrot/orbit-boilerplate.svg">
 
 ## Project scope
 Includes support for routing with i18n
 
+## Kind of required
+Include this .htaccess file to be able to share links to friends (i.e www.coolpage.com/en/home).
+If you don't use this file, you will be redirected to a 404.
+```
+https://gist.github.com/stockbrot/e905eeb41dee315e6e512db1cb94606f
+```
+
+
 ## Project setup
 ```
-npm install
+yarn
 ```
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+yarn serve
 ```
 
 ### Compiles and minifies for production
 ```
-npm run build
+yarn build
 ```
 
 ### Run your tests
 ```
-npm run test
+yarn test
 ```
 
 ### Lints and fixes files
 ```
-npm run lint
+yarn lint
 ```
 
 ### Customize configuration
