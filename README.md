@@ -1,5 +1,5 @@
 # Orbit's Boilerplate for Vue.js (using vuetify, vue-router, vue-i18n)
-<img src="https://img.shields.io/badge/yarn_build-passing-success.svg?style=popout-square&logo=vue.js&color=black">  <img src="https://img.shields.io/librariesio/github/stockbrot/orbit-boilerplate.svg">
+<img src="https://img.shields.io/badge/yarn_build-passing-success.svg?style=popout-square&logo=vue.js&color=black">  <img src="https://img.shields.io/librariesio/github/stockbrot/orbit-boilerplate.svg?style=popout-square&color=black">
 
 ## Project scope
 Includes support for routing with i18n
