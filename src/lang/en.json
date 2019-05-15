@@ -1,6 +1,15 @@
 {
   "footer": "Get connected with us on social networks!",
   "pages": {
+    "home": "Home",
     "about": "About"
+  },
+  "about": {
+    "headline": "What about this?",
+    "subheader": "No one knows... :("
+  },
+  "home": {
+    "headline": "Welcome to Orbit's Vue.js Boilerplate",
+    "subheader": "Have fun and stuffs"
   }
 }

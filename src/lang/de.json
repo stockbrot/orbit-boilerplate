@@ -1,6 +1,15 @@
 {
   "footer": "Verbinde dich mit uns auf unseren Sozialen Netzwerken!",
   "pages": {
+    "home": "Start",
     "about": "Über Uns"
+  },
+  "about": {
+    "headline": "Was ist hier mit",
+    "subheader": "Keiner weiß es... :("
+  },
+  "home": {
+    "headline": "Willkommen zu Orbit's Vue.js Boilerplate",
+    "subheader": "Viel spaß und so'n zeugs."
   }
 }
