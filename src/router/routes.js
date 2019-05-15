@@ -15,8 +15,13 @@ export default [
     children: [
       {
         path: 'home',
-        name: 'Home',
+        name: 'home',
         component: load('Home')
+      },
+      {
+        path: 'about',
+        name: 'about',
+        component: load('About')
       },
       {
         path: '*',
