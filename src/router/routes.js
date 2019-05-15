@@ -19,26 +19,6 @@ export default [
         component: load('Home')
       },
       {
-        path: 'about',
-        name: 'About',
-        component: load('About')
-      },
-      {
-        path: 'blog',
-        name: 'Blog',
-        component: load('Blog')
-      },
-      {
-        path: 'community',
-        name: 'Community',
-        component: load('Community')
-      },
-      {
-        path: 'buy',
-        name: 'Buy',
-        component: load('Buy')
-      },
-      {
         path: '*',
         component: load('404')
       }

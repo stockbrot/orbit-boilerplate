@@ -5,7 +5,7 @@ body > .inner {
 body.pg-loaded > .inner {
   display: block;
 }
-
+/*
 .application, .headline, .title, .display-1, .display-2, .display-3, .display-4, .headline, .LanguageSwitcher {
   font-family: Anton, sans-serif !important;
   font-weight: normal;
@@ -80,7 +80,7 @@ body.pg-loaded > .inner {
 .lang-icon, .lang-drawer {
   margin: auto;
 }
-
+*/
 .LanguageSwitcher {
   margin: auto;
 }
