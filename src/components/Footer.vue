@@ -9,7 +9,7 @@
       flat
       tile
     >
-      <v-card-title class="orange">
+      <v-card-title>
         <strong class="dg-text subheading font-weight-black">{{ $t('footer') }}</strong>
         <v-spacer></v-spacer>
 
@@ -25,7 +25,7 @@
       </v-card-title>
 
       <v-card-actions class="grey darken-3 justify-center footer-year">
-        &copy;2018 — <strong>DoctorORBiT</strong>
+        &copy;2019 — <strong>DoctorORBiT</strong>
       </v-card-actions>
     </v-card>
   </v-footer>
@@ -47,4 +47,5 @@ export default {
   }
 }
 </script>
+
 <style></style>
