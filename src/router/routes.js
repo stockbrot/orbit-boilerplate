@@ -1,32 +1,21 @@
-import { Trans } from '@/plugins/Translation'
 
 function load (component) {
   // '@' is aliased to src/components
   return () => import(/* webpackChunkName: "[request]" */ `@/pages/${component}.vue`)
 }
 
+import { Trans } from '@/plugins/Translation'
+
 export default [
   {
-    path: '/:lang',
-    component: {
-      template: '<router-view></router-view>'
-    },
     beforeEnter: Trans.routeMiddleware,
+    path: '/:lang',
+    component: () => import('../layouts/MainLayout.vue'),
     children: [
-      {
-        path: 'home',
-        name: 'home',
-        component: load('Home')
-      },
-      {
-        path: 'about',
-        name: 'about',
-        component: load('About')
-      },
-      {
-        path: '*',
-        component: load('404')
-      }
+      // Can be used as 404 or failsave to go Home (which I prefer)
+      { path: '', name: 'home', component: load('Home') },
+      { path: 'about', name: 'about', component: load('About') },
+      { path: '*', name: '404', component: load('404') }
     ]
   },
   {
