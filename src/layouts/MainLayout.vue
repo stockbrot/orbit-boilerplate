@@ -1,6 +1,6 @@
 <template>
   <v-content>
-    <ToolbarComp/>
+    <ToolbarComp siteTitle="boilerplate"/>
 
     <v-container fluid fill-height>
       <router-view class="routerclass"/>

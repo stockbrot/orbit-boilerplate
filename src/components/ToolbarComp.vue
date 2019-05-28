@@ -2,7 +2,7 @@
   <v-layout row fixed>
     <v-toolbar fixed>
       <v-toolbar-side-icon class="hidden-md-and-up" @click="drawer = !drawer"></v-toolbar-side-icon>
-      <v-toolbar-title class="text-uppercase"><v-btn flat class="display-1" :to="$i18nRoute({ name: nav.home.title })" @click="sendData(nav.home)">{{ siteName }}</v-btn></v-toolbar-title>
+      <v-toolbar-title class="text-uppercase"><v-btn flat class="display-1" :to="$i18nRoute({ name: nav.home.title })" @click="sendData(nav.home)">{{ siteTitle }}</v-btn></v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
         <template v-for="item in nav">
@@ -22,7 +22,7 @@
         <v-list class="pa-1">
           <v-list-tile avatar>
             <v-list-tile-content>
-              <v-list-tile-title class="text-uppercase">{{ siteName }}</v-list-tile-title>
+              <v-list-tile-title class="text-uppercase">{{ siteTitle }}</v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
         </v-list>
@@ -54,12 +54,14 @@ import TheLanguageSwitcher from '@/components/TheLanguageSwitcher'
 
 export default {
   name: 'ToolbarComp',
+  props: {
+    siteTitle: String
+  },
   components: {
     TheLanguageSwitcher
   },
   data () {
     return {
-      siteName: 'Possekel Immo',
       drawer: false,
       nav: {
         home: {
