@@ -1,6 +1,6 @@
 <template>
   <select
-    class="LanguageSwitcher title text-uppercase"
+    class="lang-swit title text-uppercase pa-2"
     name="language"
     @change="changeLanguage"
   >
@@ -8,6 +8,7 @@
       v-for="lang in supportedLanguages"
       :key="lang"
       :selected="isCurrentLanguage(lang)"
+      class="black--text lang-swit-opt"
       :class="{ 'is-selected': isCurrentLanguage(lang) }"
       :value="lang"
     >
@@ -50,5 +51,9 @@ export default {
 }
 </script>
 
-<style>
+<style lang="stylus">
+.lang-swit-opt
+  background-color: grey
+.is-selected
+  background-color: green
 </style>
